@@ -1,0 +1,24 @@
+TP RMI - Banque (ESEN) - Projets Maven pour Apache NetBeans
+=============================================================
+
+OUVRIR DANS NETBEANS
+  File > Open Project > choisir serveur_RMI > Open
+  File > Open Project > choisir client_RMI  > Open
+  (Maven est inclus dans NetBeans, aucune installation en plus. JDK 17 ou plus.)
+
+LANCER
+  1) Serveur : clic droit sur serveur_RMI > Run (classe ServeurRMI). Laisser tourner.
+  2) Client console : clic droit sur client_RMI > Run (classe ClientRMI).
+  3) Client graphique : ouvrir ClientGUI.java > clic droit > Run File (Shift+F6).
+  Vous pouvez lancer plusieurs clients en meme temps.
+
+CONTENU
+  EBanqueRemote  : interface (identique dans serveur et client)
+  BanqueServiceImpl : implementation (serveur seulement)
+  ServeurRMI     : registry sur le port 1099, nom "BK"
+  ClientRMI      : test du TP + menu console
+  ClientGUI      : interface Swing
+
+AJOUTS PAR RAPPORT AU TP : comptes, depot, retrait, virement, historique,
+conversion multi-devises, interets, mensualite de credit, compteur d'appels,
+exceptions personnalisees, acces multi-clients (synchronized).
